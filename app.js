@@ -17,10 +17,10 @@ copyArea.innerText = `border : 2px solid #000000;`
 // border-radius : 2px 2px 2px 2px;
 
 function borderGen() {
-    div.style.borderTopLeftRadius=`${topLeft.value}%`
-    div.style.borderTopRightRadius=`${topRight.value}%`
-    div.style.borderBottomRightRadius=`${bottomRight.value}%`
-    div.style.borderBottomLeftRadius=`${bottomLeft.value}%`
+    // div.style.borderTopLeftRadius=`${topLeft.value}%`
+    // div.style.borderTopRightRadius=`${topRight.value}%`
+    // div.style.borderBottomRightRadius=`${bottomRight.value}%`
+    // div.style.borderBottomLeftRadius=`${bottomLeft.value}%`
     div.style.border=`${size.value}px ${border.value} ${borderColor.value}`
     div.style.backgroundColor=`${boxColor.value}`
 
