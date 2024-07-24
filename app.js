@@ -7,26 +7,38 @@ let borderColor = document.getElementById('border-color')
 let boxColor = document.getElementById('box-color')
 let border = document.getElementById('border')
 let div = document.getElementById('boxDiv')
+
+// by defalut style of box
+
 div.style.border='2px solid #000000'
 div.style.backgroundColor='#007BFF'
+div.style.borderRadius='2%'
 
 //   br issue herererererererererererererererer
 
-copyArea.innerText = `border : 2px solid #000000;`
+copyArea.innerText = `border : 2px solid #000000;
+<br/>
+border-radius : 2px 2px 2px 2px;`
 
-// border-radius : 2px 2px 2px 2px;
+// let borderCss = document.createElement('p')
+// borderCss.innerText=`border : 2px solid #000000;`
+
+// let borderRadiusCss = document.createElement('p')
+// borderRadiusCss.innerText=`border-radius : 2px 2px 2px 2px;`
+
+// copyArea.appendChild(borderCss)
+// copyArea.innerHTML =borderCss 
+// copyArea.innerHTML +=borderRadiusCss 
+// console.log(copyArea);
+
 
 function borderGen() {
-    // div.style.borderTopLeftRadius=`${topLeft.value}%`
-    // div.style.borderTopRightRadius=`${topRight.value}%`
-    // div.style.borderBottomRightRadius=`${bottomRight.value}%`
-    // div.style.borderBottomLeftRadius=`${bottomLeft.value}%`
+    div.style.borderRadius = `${topLeft.value}% ${topRight.value}% ${bottomRight.value}% ${bottomLeft.value}%`
     div.style.border=`${size.value}px ${border.value} ${borderColor.value}`
     div.style.backgroundColor=`${boxColor.value}`
 
-    copyArea.innerText = `border :${size.value}px ${border.value} ${borderColor.value};`
-    
-    // border-radius: ${topLeft.value}px ${topRightight.value}px ${bottomLeft.value}px ${bottomRight.value}px;
+    copyArea.innerText = `border :${size.value}px ${border.value} ${borderColor.value};<br>
+    border-radius: ${topLeft.value}% ${topRight.value}% ${bottomRight.value}% ${bottomLeft.value}%;`
     
 }
 
