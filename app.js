@@ -16,7 +16,7 @@ div.style.borderRadius='2%'
 
 //   br issue herererererererererererererererer
 
-copyArea.innerHTML = `border : 2px solid #000000;\nborder-radius : 2px 2px 2px 2px;`
+copyArea.innerHTML = `border : 2px solid #000000;\nborder-radius : 2% 2% 2% 2%;`
 
 // let borderCss = document.createElement('p')
 // borderCss.innerText=`border : 2px solid #000000;`
