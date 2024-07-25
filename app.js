@@ -16,9 +16,7 @@ div.style.borderRadius='2%'
 
 //   br issue herererererererererererererererer
 
-copyArea.innerText = `border : 2px solid #000000;
-<br/>
-border-radius : 2px 2px 2px 2px;`
+copyArea.innerHTML = `border : 2px solid #000000;\nborder-radius : 2px 2px 2px 2px;`
 
 // let borderCss = document.createElement('p')
 // borderCss.innerText=`border : 2px solid #000000;`
@@ -37,8 +35,7 @@ function borderGen() {
     div.style.border=`${size.value}px ${border.value} ${borderColor.value}`
     div.style.backgroundColor=`${boxColor.value}`
 
-    copyArea.innerText = `border :${size.value}px ${border.value} ${borderColor.value};<br>
-    border-radius: ${topLeft.value}% ${topRight.value}% ${bottomRight.value}% ${bottomLeft.value}%;`
+    copyArea.innerHTML = `border :${size.value}px ${border.value} ${borderColor.value};\nborder-radius: ${topLeft.value}% ${topRight.value}% ${bottomRight.value}% ${bottomLeft.value}%;`
     
 }
 
